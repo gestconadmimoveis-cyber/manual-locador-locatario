@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,7 +16,6 @@
       --bg: #060606;
       --bg2: #0c0c0c;
       --panel: #111111;
-      --panel2: #17150f;
       --gold: #d5a93f;
       --gold2: #f0d47f;
       --text: #f7f3e9;
@@ -362,12 +362,12 @@
     }
 
     section {
-      padding: 95px 0;
+      padding: 92px 0;
     }
 
     .section-head {
-      max-width: 810px;
-      margin-bottom: 45px;
+      max-width: 820px;
+      margin-bottom: 46px;
     }
 
     .section-head.center {
@@ -377,7 +377,7 @@
 
     h2 {
       margin: 12px 0 0;
-      font-size: clamp(2.2rem,4.7vw,4rem);
+      font-size: clamp(2.15rem,4.7vw,4rem);
       line-height: 1.03;
       letter-spacing: -.045em;
     }
@@ -388,16 +388,16 @@
       font-size: 1.05rem;
     }
 
-    .audience-grid,
     .problem-grid,
-    .content-grid,
-    .bonus-grid {
+    .audience-grid,
+    .content-grid {
       display: grid;
       gap: 18px;
       grid-template-columns: repeat(3,1fr);
     }
 
-    .card {
+    .card,
+    .audience-card {
       padding: 27px;
       border: 1px solid rgba(255,255,255,.09);
       border-radius: 18px;
@@ -405,7 +405,8 @@
       transition: .22s ease;
     }
 
-    .card:hover {
+    .card:hover,
+    .audience-card:hover {
       transform: translateY(-4px);
       border-color: rgba(213,169,63,.4);
     }
@@ -417,64 +418,42 @@
       letter-spacing: .12em;
     }
 
-    .card-icon {
-      width: 50px;
-      height: 50px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 17px;
-      border-radius: 13px;
-      color: #181108;
-      background: linear-gradient(145deg,#f1d47c,#a96f17);
-      font-weight: 950;
-    }
-
-    .card h3 {
+    .card h3,
+    .audience-card h3 {
       margin: 11px 0 8px;
-      font-size: 1.14rem;
+      font-size: 1.18rem;
     }
 
-    .card p {
+    .card p,
+    .audience-card p {
       margin: 0;
       color: var(--muted);
       font-size: .94rem;
     }
 
     .audience-card {
-      padding: 32px;
-      border-radius: 21px;
-      border: 1px solid var(--line);
+      border-color: var(--line);
       background:
-        radial-gradient(circle at 80% 0,rgba(213,169,63,.11),transparent 35%),
+        radial-gradient(circle at 80% 0,rgba(213,169,63,.1),transparent 35%),
         #0c0c0c;
     }
 
     .audience-label {
       color: var(--gold2);
+      font-size: .78rem;
       font-weight: 950;
-      letter-spacing: .08em;
-      font-size: .8rem;
-    }
-
-    .audience-card h3 {
-      margin: 12px 0 10px;
-      font-size: 1.45rem;
-    }
-
-    .audience-card p {
-      color: var(--muted);
-      margin: 0;
+      letter-spacing: .1em;
     }
 
     .big-idea {
-      padding: 78px 0;
+      padding: 76px 0;
       border-block: 1px solid rgba(213,169,63,.15);
       background:
         linear-gradient(90deg,rgba(213,169,63,.055),transparent,rgba(213,169,63,.055));
     }
 
     .big-idea-inner {
-      max-width: 950px;
+      max-width: 930px;
       margin: auto;
       text-align: center;
     }
@@ -490,25 +469,14 @@
       color: var(--gold2);
     }
 
-    .dark-panel {
-      position: relative;
-      overflow: hidden;
-      padding: 55px;
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      background:
-        linear-gradient(135deg,rgba(213,169,63,.08),transparent 42%),
-        #0b0b0b;
-    }
-
-    .how-grid {
+    .mechanism {
       display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 55px;
+      grid-template-columns: .88fr 1.12fr;
+      gap: 54px;
       align-items: center;
     }
 
-    .step-stack {
+    .steps {
       display: grid;
       gap: 14px;
     }
@@ -517,7 +485,6 @@
       display: grid;
       grid-template-columns: 48px 1fr;
       gap: 16px;
-      align-items: start;
       padding: 20px;
       border: 1px solid rgba(255,255,255,.08);
       border-radius: 15px;
@@ -536,7 +503,7 @@
     }
 
     .step h3 {
-      margin: 0 0 5px;
+      margin: 0 0 4px;
     }
 
     .step p {
@@ -545,24 +512,23 @@
       font-size: .93rem;
     }
 
-    .demo-box {
-      padding: 32px;
-      border-radius: 22px;
-      border: 1px solid rgba(213,169,63,.35);
+    .demo {
+      padding: 38px;
+      border-radius: 24px;
+      border: 1px solid rgba(213,169,63,.34);
       background:
-        radial-gradient(circle at 50% 0,rgba(213,169,63,.12),transparent 40%),
+        radial-gradient(circle at 50% 0,rgba(213,169,63,.13),transparent 42%),
         #0b0b0b;
     }
 
     .demo-question {
       color: var(--gold2);
-      font-size: 1.4rem;
-      font-weight: 900;
+      font-size: 1.45rem;
       line-height: 1.35;
+      font-weight: 900;
     }
 
-    .demo-answer {
-      margin-top: 18px;
+    .demo p {
       color: var(--muted);
     }
 
@@ -573,7 +539,7 @@
     }
 
     .preview-page {
-      min-height: 300px;
+      min-height: 305px;
       padding: 28px 22px;
       border-radius: 12px;
       color: #16110a;
@@ -599,6 +565,27 @@
       line-height: 1.55;
     }
 
+    .dark-panel {
+      padding: 55px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg,rgba(213,169,63,.08),transparent 42%),
+        #0b0b0b;
+    }
+
+    .card-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 17px;
+      border-radius: 13px;
+      color: #181108;
+      background: linear-gradient(145deg,#f1d47c,#a96f17);
+      font-weight: 950;
+    }
+
     .mentor-grid {
       display: grid;
       grid-template-columns: .82fr 1.18fr;
@@ -608,7 +595,7 @@
 
     .mentor-photo {
       width: 100%;
-      height: 610px;
+      height: 600px;
       object-fit: cover;
       object-position: center 18%;
       border-radius: 25px;
@@ -633,17 +620,10 @@
       font-weight: 850;
     }
 
-    .bonus-number {
-      color: var(--gold);
-      font-size: .72rem;
-      font-weight: 950;
-      letter-spacing: .13em;
-    }
-
     .offer-box {
-      max-width: 820px;
+      max-width: 840px;
       margin: auto;
-      padding: 56px 35px;
+      padding: 58px 38px;
       text-align: center;
       border-radius: 28px;
       border: 1px solid rgba(213,169,63,.4);
@@ -677,9 +657,9 @@
     .price small {
       display: block;
       color: var(--muted);
-      font-weight: 850;
       text-transform: uppercase;
       letter-spacing: .11em;
+      font-weight: 850;
     }
 
     .price strong {
@@ -691,7 +671,7 @@
     }
 
     .guarantee {
-      max-width: 760px;
+      max-width: 720px;
       margin: 24px auto 0;
       padding: 20px;
       border-radius: 14px;
@@ -778,7 +758,7 @@
 
     @media(max-width:960px) {
       .hero-grid,
-      .how-grid,
+      .mechanism,
       .mentor-grid {
         grid-template-columns: 1fr;
       }
@@ -793,10 +773,9 @@
         justify-content: center;
       }
 
-      .audience-grid,
       .problem-grid,
-      .content-grid,
-      .bonus-grid {
+      .audience-grid,
+      .content-grid {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -804,17 +783,12 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      .trust-grid {
-        grid-template-columns: 1fr 1fr;
-        padding: 22px 0;
-      }
-
       .book-stage {
         min-height: 490px;
       }
 
       .mentor-photo {
-        height: 530px;
+        height: 520px;
       }
     }
 
@@ -882,23 +856,22 @@
       }
 
       section {
-        padding: 72px 0;
+        padding: 70px 0;
       }
 
-      .audience-grid,
       .problem-grid,
+      .audience-grid,
       .content-grid,
-      .bonus-grid,
       .preview-grid {
         grid-template-columns: 1fr;
       }
 
       .dark-panel {
-        padding: 34px 20px;
+        padding: 32px 20px;
       }
 
       .mentor-photo {
-        height: 430px;
+        height: 420px;
       }
 
       .mobile-cta {
@@ -939,6 +912,7 @@
           Quero o manual
         </a>
       </div>
+
     </div>
   </nav>
 
@@ -960,14 +934,12 @@
           </h1>
 
           <p class="hero-subtitle">
-
             Precisa saber <strong>onde consultar antes de responder,
             cobrar, pagar ou tomar uma decisão sobre aluguel.</strong>
 
             Tenha no celular um guia prático para consultar rapidamente
             direitos, deveres, despesas, garantias, vistoria, multas,
             inadimplência e outras situações comuns da locação.
-
           </p>
 
           <div class="hero-actions">
@@ -1041,6 +1013,7 @@
     </section>
 
     <div class="trust-strip">
+
       <div class="container trust-grid">
 
         <div>
@@ -1059,7 +1032,85 @@
         </div>
 
       </div>
+
     </div>
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-head center reveal">
+
+          <div class="kicker">
+            O PROBLEMA
+          </div>
+
+          <h2>
+            Uma dúvida simples sobre aluguel pode virar horas de pesquisa e discussão.
+          </h2>
+
+          <p>
+            Porque normalmente a pergunta chega quando você precisa decidir rápido,
+            mas as respostas aparecem espalhadas, incompletas ou diferentes umas das outras.
+          </p>
+
+        </div>
+
+        <div class="problem-grid">
+
+          <article class="card reveal">
+            <div class="card-number">01</div>
+            <h3>“Quem paga esse conserto?”</h3>
+            <p>
+              Proprietário ou inquilino? Uma das dúvidas que mais geram desgaste.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-number">02</div>
+            <h3>“Posso sair antes do contrato?”</h3>
+            <p>
+              E logo surge outra pergunta: existe multa e como ela funciona?
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-number">03</div>
+            <h3>“Quem paga condomínio e IPTU?”</h3>
+            <p>
+              Uma dúvida recorrente sobre responsabilidades e despesas.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-number">04</div>
+            <h3>“Pode cobrar caução e fiador?”</h3>
+            <p>
+              Garantias locatícias geram dúvidas tanto para profissionais quanto para clientes.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-number">05</div>
+            <h3>“O proprietário pode pedir o imóvel?”</h3>
+            <p>
+              A resposta depende da situação, do contrato e das circunstâncias da locação.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-number">06</div>
+            <h3>“E se o aluguel não for pago?”</h3>
+            <p>
+              Quando a locação sai do normal, entender o cenário antes de agir faz diferença.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
 
     <section id="paraquem">
 
@@ -1072,13 +1123,8 @@
           </div>
 
           <h2>
-            Três lados da locação. As mesmas dúvidas todos os dias.
+            O mesmo Manual. Três formas diferentes de usar.
           </h2>
-
-          <p>
-            O Manual foi criado para quem precisa entender rapidamente
-            uma situação antes de agir.
-          </p>
 
         </div>
 
@@ -1087,17 +1133,16 @@
           <article class="audience-card reveal">
 
             <div class="audience-label">
-              PARA CORRETORES
+              CORRETOR
             </div>
 
             <h3>
-              Pare de pesquisar do zero a mesma dúvida.
+              Pare de pesquisar a mesma resposta toda semana.
             </h3>
 
             <p>
-              Tenha uma referência prática quando proprietário ou inquilino
-              perguntar sobre multa, despesas, garantias, vistoria,
-              devolução ou outras situações da locação.
+              Consulte rapidamente situações recorrentes antes de orientar
+              proprietários e inquilinos.
             </p>
 
           </article>
@@ -1105,17 +1150,16 @@
           <article class="audience-card reveal">
 
             <div class="audience-label">
-              PARA PROPRIETÁRIOS
+              PROPRIETÁRIO
             </div>
 
             <h3>
-              Entenda melhor antes de cobrar ou decidir.
+              Entenda antes de cobrar, autorizar ou decidir.
             </h3>
 
             <p>
-              Consulte seus principais direitos, deveres e responsabilidades
-              durante a locação e saiba quais pontos precisam ser analisados
-              antes de tomar uma decisão.
+              Tenha uma referência para consultar seus principais direitos,
+              deveres e responsabilidades durante a locação.
             </p>
 
           </article>
@@ -1123,17 +1167,16 @@
           <article class="audience-card reveal">
 
             <div class="audience-label">
-              PARA INQUILINOS
+              INQUILINO
             </div>
 
             <h3>
-              Entenda antes de simplesmente aceitar.
+              Entenda antes de pagar, contestar ou entregar o imóvel.
             </h3>
 
             <p>
-              Consulte assuntos relacionados a despesas, garantias,
-              reparos, multa, saída antecipada, devolução do imóvel
-              e outras situações recorrentes.
+              Consulte temas como despesas, reparos, multa,
+              garantias e devolução do imóvel.
             </p>
 
           </article>
@@ -1149,9 +1192,8 @@
       <div class="container big-idea-inner reveal">
 
         <p>
-          “Você não precisa saber tudo de cabeça.
-          Precisa saber <strong>o que analisar e onde consultar</strong>
-          quando surgir uma dúvida.”
+          O Manual não foi feito para você <strong>decorar a lei.</strong>
+          Foi feito para você <strong>abrir quando surgir uma dúvida.</strong>
         </p>
 
       </div>
@@ -1160,120 +1202,33 @@
 
     <section>
 
-      <div class="container">
-
-        <div class="section-head center reveal">
-
-          <div class="kicker">
-            A dúvida aparece rápido
-          </div>
-
-          <h2>
-            E quase nunca aparece na hora mais conveniente.
-          </h2>
-
-          <p>
-            Uma pergunta simples pode virar mensagens, pesquisas,
-            opiniões diferentes e horas tentando descobrir quem está certo.
-          </p>
-
-        </div>
-
-        <div class="problem-grid">
-
-          <article class="card reveal">
-            <div class="card-number">01</div>
-            <h3>“Quem paga esse conserto?”</h3>
-            <p>
-              Proprietário ou inquilino?
-              Uma das dúvidas que mais geram discussão durante a locação.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-number">02</div>
-            <h3>“Posso sair antes do contrato?”</h3>
-            <p>
-              E logo depois aparece outra pergunta:
-              existe multa e como ela deve ser analisada?
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-number">03</div>
-            <h3>“Quem paga condomínio e IPTU?”</h3>
-            <p>
-              Uma pergunta recorrente que exige atenção
-              às responsabilidades envolvidas na locação.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-number">04</div>
-            <h3>“Pode cobrar caução e fiador?”</h3>
-            <p>
-              As modalidades de garantia são uma fonte frequente
-              de dúvidas para todas as partes.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-number">05</div>
-            <h3>“O proprietário pode pedir o imóvel?”</h3>
-            <p>
-              A resposta depende da situação,
-              do contrato e de outros fatores da locação.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-number">06</div>
-            <h3>“E se o aluguel deixar de ser pago?”</h3>
-            <p>
-              Quando a locação sai do normal,
-              entender o cenário antes de agir faz diferença.
-            </p>
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section>
-
-      <div class="container how-grid">
+      <div class="container mechanism">
 
         <div class="reveal">
 
           <div class="kicker">
-            CONSULTA RÁPIDA
+            COMO FUNCIONA
           </div>
 
           <h2>
-            Não é para decorar.
-            É para abrir quando precisar.
+            De dúvida solta para consulta organizada.
           </h2>
 
           <p style="color:var(--muted);font-size:1.05rem">
-
-            Em vez de começar uma pesquisa no Google,
-            perguntar em grupos ou assistir a vários vídeos
-            sempre que surgir uma dúvida,
-            você começa por uma referência já organizada.
-
+            O valor do Manual não está em fazer você decorar informação.
+            Está em reduzir o tempo perdido procurando respostas dispersas
+            sempre que aparece uma situação recorrente.
           </p>
 
         </div>
 
-        <div class="step-stack">
+        <div class="steps">
 
           <div class="step reveal">
             <div class="step-num">1</div>
             <div>
-              <h3>Surgiu uma dúvida</h3>
-              <p>Identifique a situação que precisa ser analisada.</p>
+              <h3>Surgiu a dúvida</h3>
+              <p>Identifique qual situação da locação precisa ser analisada.</p>
             </div>
           </div>
 
@@ -1281,7 +1236,7 @@
             <div class="step-num">2</div>
             <div>
               <h3>Abra o Manual</h3>
-              <p>Localize rapidamente o tema correspondente.</p>
+              <p>Localize o assunto correspondente.</p>
             </div>
           </div>
 
@@ -1289,21 +1244,17 @@
             <div class="step-num">3</div>
             <div>
               <h3>Entenda o ponto principal</h3>
-              <p>
-                Veja quais direitos, deveres ou responsabilidades
-                precisam ser considerados.
-              </p>
+              <p>Veja quais direitos, deveres e responsabilidades precisam ser considerados.</p>
             </div>
           </div>
 
           <div class="step reveal">
             <div class="step-num">4</div>
             <div>
-              <h3>Decida o próximo passo</h3>
+              <h3>Defina o próximo passo</h3>
               <p>
-                E, quando o caso exigir análise jurídica específica,
-                procure um profissional habilitado com mais clareza
-                sobre o que precisa perguntar.
+                E, quando a situação exigir análise jurídica específica,
+                procure um profissional habilitado sabendo melhor o que precisa perguntar.
               </p>
             </div>
           </div>
@@ -1319,141 +1270,36 @@
       <div class="container">
 
         <div class="section-head center reveal">
-          <div class="kicker">NA PRÁTICA</div>
+
+          <div class="kicker">
+            EXEMPLO PRÁTICO
+          </div>
+
           <h2>
-            É esse tipo de situação que o Manual ajuda você a consultar.
+            É assim que uma consulta acontece.
           </h2>
+
         </div>
 
-        <div class="demo-box reveal">
+        <div class="demo reveal">
 
           <div class="demo-question">
             “O inquilino quer devolver o imóvel antes do fim do contrato.
             Existe uma multa prevista. O que precisa ser analisado?”
           </div>
 
-          <div class="demo-answer">
-            Em vez de começar a pesquisa do zero,
-            você consulta o tópico sobre saída antecipada e multa,
-            entende os principais pontos envolvidos e consegue
-            identificar melhor o que precisa verificar no caso concreto.
-
-            <br><br>
-
-            <strong style="color:white">
-              Essa é a proposta do Manual:
-              transformar uma dúvida solta em uma consulta organizada.
-            </strong>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="conteudo">
-
-      <div class="container dark-panel">
-
-        <div class="section-head reveal">
-
-          <div class="kicker">
-            O QUE VOCÊ RECEBE
-          </div>
-
-          <h2>
-            Os principais assuntos da locação organizados em um único lugar.
-          </h2>
-
           <p>
-            Conteúdo simples, direto e pensado para consulta.
+            Em vez de abrir várias abas, assistir vídeos diferentes ou perguntar
+            em grupos, você consulta o tópico relacionado à saída antecipada,
+            identifica os pontos que precisam ser observados e parte de uma base organizada.
           </p>
 
-        </div>
-
-        <div class="content-grid">
-
-          <article class="card reveal">
-            <div class="card-icon">01</div>
-            <h3>Direitos e deveres</h3>
-            <p>
-              Entenda os principais pontos relacionados
-              às responsabilidades do locador e do locatário.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">02</div>
-            <h3>Garantias locatícias</h3>
-            <p>
-              Caução, fiador, seguro-fiança
-              e outras modalidades explicadas de forma objetiva.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">03</div>
-            <h3>Vistoria do imóvel</h3>
-            <p>
-              Veja por que a vistoria merece atenção
-              tanto na entrada quanto na devolução.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">04</div>
-            <h3>Reparos e benfeitorias</h3>
-            <p>
-              Entenda os pontos que precisam ser analisados
-              quando surge a pergunta: “Quem paga?”
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">05</div>
-            <h3>Multa de saída antecipada</h3>
-            <p>
-              Saiba o que observar quando o imóvel
-              é devolvido antes do prazo previsto.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">06</div>
-            <h3>Reajustes e despesas</h3>
-            <p>
-              Consulte questões relacionadas a aluguel,
-              IPTU, condomínio e outras despesas.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">07</div>
-            <h3>Direito de preferência</h3>
-            <p>
-              Entenda os principais pontos quando
-              o proprietário decide vender o imóvel alugado.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">08</div>
-            <h3>Retomada do imóvel</h3>
-            <p>
-              Consulte conceitos e situações relacionadas
-              à retomada da propriedade.
-            </p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-icon">09</div>
-            <h3>Inadimplência e despejo</h3>
-            <p>
-              Entenda os principais pontos envolvidos
-              quando o aluguel deixa de ser pago.
-            </p>
-          </article>
+          <p>
+            <strong style="color:#fff">
+              Essa é a função do Manual: economizar tempo de pesquisa
+              e tornar a consulta mais simples.
+            </strong>
+          </p>
 
         </div>
 
@@ -1472,12 +1318,12 @@
           </div>
 
           <h2>
-            Um material feito para ser simples de consultar.
+            Conteúdo feito para encontrar rápido o que você procura.
           </h2>
 
           <p>
-            Você não precisa enfrentar centenas de páginas
-            para localizar uma informação recorrente.
+            A estrutura é direta porque a proposta é consulta,
+            não transformar uma dúvida simples em horas de leitura.
           </p>
 
         </div>
@@ -1485,38 +1331,34 @@
         <div class="preview-grid">
 
           <div class="preview-page reveal">
-            <small>MANUAL</small>
-            <h3>Direitos e deveres na locação</h3>
+            <small>CONSULTA 01</small>
+            <h3>Direitos e deveres</h3>
             <p>
-              Conteúdo organizado de forma direta para facilitar
-              a compreensão dos principais pontos.
+              Principais responsabilidades das partes na relação de locação.
             </p>
           </div>
 
           <div class="preview-page reveal">
-            <small>CONSULTA</small>
+            <small>CONSULTA 02</small>
             <h3>Multa e saída antecipada</h3>
             <p>
-              Entenda o que precisa ser observado
-              quando a locação termina antes do prazo.
+              Pontos que precisam ser observados quando a locação termina antes do prazo.
             </p>
           </div>
 
           <div class="preview-page reveal">
-            <small>DESPESAS</small>
-            <h3>Quem pode ser responsável?</h3>
+            <small>CONSULTA 03</small>
+            <h3>Despesas da locação</h3>
             <p>
-              Uma referência para consultar temas
-              envolvendo despesas e responsabilidades.
+              Referência para dúvidas envolvendo condomínio, IPTU e outros custos.
             </p>
           </div>
 
           <div class="preview-page reveal">
-            <small>VISTORIA</small>
-            <h3>Entrada e devolução</h3>
+            <small>CONSULTA 04</small>
+            <h3>Vistoria e devolução</h3>
             <p>
-              Pontos que merecem atenção
-              durante etapas importantes da locação.
+              Pontos que merecem atenção na entrada e na entrega do imóvel.
             </p>
           </div>
 
@@ -1526,50 +1368,76 @@
 
     </section>
 
-    <section>
+    <section id="conteudo">
 
-      <div class="container">
+      <div class="container dark-panel">
 
-        <div class="section-head center reveal">
+        <div class="section-head reveal">
 
           <div class="kicker">
-            BÔNUS
+            O QUE VOCÊ VAI CONSULTAR
           </div>
 
           <h2>
-            Mais três materiais para facilitar sua consulta.
+            Os assuntos que mais aparecem durante uma locação.
           </h2>
 
         </div>
 
-        <div class="bonus-grid">
+        <div class="content-grid">
 
           <article class="card reveal">
-            <div class="bonus-number">BÔNUS 01</div>
-            <h3>Checklist de Entrada no Imóvel</h3>
-            <p>
-              Uma lista rápida dos principais pontos
-              que merecem atenção no início da locação.
-            </p>
+            <div class="card-icon">01</div>
+            <h3>Direitos e deveres</h3>
+            <p>Responsabilidades do locador e do locatário.</p>
           </article>
 
           <article class="card reveal">
-            <div class="bonus-number">BÔNUS 02</div>
-            <h3>Checklist de Devolução do Imóvel</h3>
-            <p>
-              Um roteiro para organizar os principais pontos
-              na hora de encerrar a locação e devolver as chaves.
-            </p>
+            <div class="card-icon">02</div>
+            <h3>Garantias locatícias</h3>
+            <p>Caução, fiador, seguro-fiança e modalidades de garantia.</p>
           </article>
 
           <article class="card reveal">
-            <div class="bonus-number">BÔNUS 03</div>
-            <h3>Guia Rápido: Quem Paga o Quê?</h3>
-            <p>
-              Uma referência resumida para consultar
-              situações recorrentes envolvendo despesas
-              e responsabilidades.
-            </p>
+            <div class="card-icon">03</div>
+            <h3>Vistoria</h3>
+            <p>Pontos importantes na entrada e na devolução do imóvel.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">04</div>
+            <h3>Reparos e benfeitorias</h3>
+            <p>O que analisar quando surge a pergunta: “Quem paga?”</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">05</div>
+            <h3>Saída antecipada</h3>
+            <p>O que observar quando o imóvel é devolvido antes do prazo.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">06</div>
+            <h3>Despesas</h3>
+            <p>Aluguel, condomínio, IPTU e outras cobranças.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">07</div>
+            <h3>Direito de preferência</h3>
+            <p>Quando o proprietário decide vender o imóvel alugado.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">08</div>
+            <h3>Retomada do imóvel</h3>
+            <p>Conceitos relacionados à retomada da propriedade.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">09</div>
+            <h3>Inadimplência e despejo</h3>
+            <p>Situações relacionadas à falta de pagamento.</p>
           </article>
 
         </div>
@@ -1605,20 +1473,19 @@
           </div>
 
           <p style="color:var(--muted);font-size:1.05rem">
-
             Rodrigo Vieira atua há mais de 14 anos no mercado imobiliário,
             lidando na prática com contratos, proprietários, inquilinos,
             vistorias, inadimplência, cobrança e gestão de locações.
-
           </p>
 
           <p style="color:var(--muted);font-size:1.05rem">
+            O Manual nasceu justamente da repetição das mesmas dúvidas
+            ao longo da rotina de locação.
+          </p>
 
-            O Manual nasceu da repetição de situações que aparecem
-            todos os dias no mercado: perguntas semelhantes,
-            dúvidas recorrentes e a necessidade de encontrar
-            uma referência de forma rápida.
-
+          <p style="color:#fff;font-weight:800">
+            Em vez de deixar essas respostas espalhadas,
+            ele organizou os principais temas em um material de consulta rápida.
           </p>
 
         </div>
@@ -1642,25 +1509,30 @@
           </h2>
 
           <p style="color:var(--muted);max-width:650px;margin:18px auto 0">
-
-            Tenha uma referência prática de locação disponível
-            no celular sempre que precisar consultar
-            um assunto recorrente.
-
+            Tenha uma referência de locação disponível
+            sempre que precisar consultar um assunto recorrente.
           </p>
 
           <div class="offer-list">
+
             <div>Manual do Locador e do Locatário</div>
-            <div>Checklist de Entrada no Imóvel</div>
-            <div>Checklist de Devolução do Imóvel</div>
-            <div>Guia Rápido: Quem Paga o Quê?</div>
             <div>Acesso digital</div>
+            <div>PDF para consultar pelo celular, tablet ou computador</div>
+            <div>Pagamento único</div>
             <div>Sem mensalidade</div>
+
           </div>
 
           <div class="price">
-            <small>Pagamento único</small>
-            <strong>R$ 47</strong>
+
+            <small>
+              Investimento
+            </small>
+
+            <strong>
+              R$ 47
+            </strong>
+
           </div>
 
           <a
@@ -1673,18 +1545,24 @@
 
           <div class="microcopy"
             style="justify-content:center;margin-top:20px">
+
             <span>Compra segura</span>
             <span>Acesso digital</span>
-            <span>Pagamento único</span>
+            <span>Sem mensalidade</span>
+
           </div>
 
           <div class="guarantee">
+
             <strong>Garantia de 7 dias</strong>
+
             <br>
-            Acesse o material e veja se ele faz sentido para você.
+
+            Acesse o material e avalie com calma.
             Caso não atenda às suas expectativas,
             você poderá solicitar o cancelamento dentro
             do prazo aplicável à compra.
+
           </div>
 
         </div>
@@ -1698,8 +1576,15 @@
       <div class="container">
 
         <div class="section-head center reveal">
-          <div class="kicker">PERGUNTAS FREQUENTES</div>
-          <h2>Tire suas dúvidas antes de comprar.</h2>
+
+          <div class="kicker">
+            PERGUNTAS FREQUENTES
+          </div>
+
+          <h2>
+            O que você precisa saber antes de comprar.
+          </h2>
+
         </div>
 
         <div class="faq">
@@ -1708,8 +1593,7 @@
             <summary>O Manual serve para corretores?</summary>
             <p>
               Sim. Ele pode ser utilizado como referência de consulta
-              para dúvidas recorrentes que aparecem no atendimento
-              a proprietários e inquilinos.
+              para dúvidas recorrentes no atendimento a proprietários e inquilinos.
             </p>
           </details>
 
@@ -1717,64 +1601,60 @@
             <summary>Serve para proprietários?</summary>
             <p>
               Sim. O proprietário poderá consultar temas relacionados
-              aos seus direitos, deveres, despesas, garantias,
-              vistoria e outras situações da locação.
+              aos seus direitos, deveres, despesas, garantias e vistoria.
             </p>
           </details>
 
           <details class="reveal">
             <summary>E para inquilinos?</summary>
             <p>
-              Sim. O Manual também aborda assuntos relevantes
-              para quem aluga um imóvel, como despesas,
-              garantias, multa, reparos e devolução.
+              Sim. O material também aborda despesas,
+              garantias, multa, reparos e devolução do imóvel.
             </p>
           </details>
 
           <details class="reveal">
             <summary>Preciso entender de Direito?</summary>
             <p>
-              Não. O objetivo do material é apresentar os assuntos
-              de forma mais simples e direta.
+              Não. A proposta é apresentar os assuntos
+              de forma simples e direta.
             </p>
           </details>
 
           <details class="reveal">
             <summary>O conteúdo é baseado na Lei do Inquilinato?</summary>
             <p>
-              Sim. O material utiliza como referência
-              a Lei nº 8.245/91.
+              Sim. O material utiliza como referência a Lei nº 8.245/91.
             </p>
           </details>
 
           <details class="reveal">
             <summary>O Manual substitui um advogado?</summary>
             <p>
-              Não. Trata-se de material informativo e educacional.
-              Casos específicos que exijam orientação jurídica
-              individualizada devem ser analisados
-              por profissional habilitado.
+              Não. É um material informativo e educacional.
+              Casos específicos que exijam orientação jurídica individualizada
+              devem ser analisados por profissional habilitado.
             </p>
           </details>
 
           <details class="reveal">
-            <summary>Como vou receber?</summary>
+            <summary>Como recebo o material?</summary>
             <p>
               O produto é digital. Após a confirmação da compra,
-              você receberá as orientações de acesso ao material.
+              você recebe as orientações de acesso.
             </p>
           </details>
 
           <details class="reveal">
             <summary>Posso consultar pelo celular?</summary>
             <p>
-              Sim. O material pode ser acessado
-              pelo celular, tablet ou computador.
+              Sim. O material pode ser acessado pelo celular,
+              tablet ou computador.
             </p>
           </details>
 
           <details class="reveal">
-            <summary>É assinatura mensal?</summary>
+            <summary>Existe mensalidade?</summary>
             <p>
               Não. O valor de R$ 47 é um pagamento único.
             </p>
@@ -1786,38 +1666,31 @@
 
     </section>
 
-    <section style="padding-top:30px">
+    <section style="padding-top:25px">
 
-      <div class="container">
+      <div class="container big-idea-inner reveal">
 
-        <div class="big-idea-inner reveal">
-
-          <div class="kicker">
-            NA PRÓXIMA DÚVIDA
-          </div>
-
-          <h2>
-            Você pode começar do zero.
-            Ou pode abrir o Manual.
-          </h2>
-
-          <p style="color:var(--muted);font-size:1.05rem;margin:22px auto 30px;max-width:700px">
-
-            Mais clareza para corretores,
-            proprietários e inquilinos consultarem
-            as situações mais comuns da locação.
-
-          </p>
-
-          <a
-            class="btn btn-primary"
-            href="https://pay.kiwify.com.br/RSoo6J2"
-            target="_blank"
-            rel="noopener noreferrer">
-            Acessar agora por R$ 47
-          </a>
-
+        <div class="kicker">
+          NA PRÓXIMA DÚVIDA
         </div>
+
+        <h2>
+          Você pode começar a pesquisa do zero.
+          Ou pode abrir o Manual.
+        </h2>
+
+        <p style="color:var(--muted);font-size:1.05rem;margin:22px auto 30px;max-width:700px">
+          Mais clareza e menos tempo perdido
+          para corretores, proprietários e inquilinos.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://pay.kiwify.com.br/RSoo6J2"
+          target="_blank"
+          rel="noopener noreferrer">
+          Acessar agora por R$ 47
+        </a>
 
       </div>
 
@@ -1852,11 +1725,15 @@
 
   <script>
     const observer = new IntersectionObserver((entries) => {
+
       entries.forEach((entry) => {
+
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
+
       });
+
     }, {
       threshold: 0.10
     });
