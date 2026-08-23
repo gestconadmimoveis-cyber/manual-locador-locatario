@@ -143,13 +143,13 @@
     }
 
     .hero {
-      padding: 85px 0 75px;
+      padding: 58px 0 62px;
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1.08fr .92fr;
-      gap: 60px;
+      gap: 54px;
       align-items: center;
     }
 
@@ -166,7 +166,7 @@
       display: flex;
       gap: 10px;
       align-items: center;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
     .eyebrow:before {
@@ -178,9 +178,9 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(2.9rem,5.8vw,5.7rem);
+      font-size: clamp(2.7rem,4.8vw,4.9rem);
       line-height: .96;
-      letter-spacing: -.055em;
+      letter-spacing: -.05em;
       text-transform: uppercase;
     }
 
@@ -189,10 +189,11 @@
     }
 
     .hero-subtitle {
-      margin: 27px 0 0;
+      margin: 22px 0 0;
       max-width: 740px;
       color: var(--muted);
-      font-size: clamp(1.08rem,1.5vw,1.28rem);
+      font-size: clamp(1.02rem,1.35vw,1.2rem);
+      line-height: 1.55;
     }
 
     .hero-subtitle strong {
@@ -203,16 +204,16 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 31px;
+      margin-top: 25px;
     }
 
     .microcopy {
       display: flex;
       flex-wrap: wrap;
-      gap: 18px;
-      margin-top: 21px;
+      gap: 16px;
+      margin-top: 18px;
       color: #a39c90;
-      font-size: .84rem;
+      font-size: .82rem;
     }
 
     .microcopy span:before {
@@ -223,7 +224,7 @@
     }
 
     .book-stage {
-      min-height: 590px;
+      min-height: 520px;
       display: grid;
       place-items: center;
       position: relative;
@@ -232,8 +233,8 @@
     .book-stage:before {
       content: "";
       position: absolute;
-      width: 420px;
-      height: 420px;
+      width: 390px;
+      height: 390px;
       border-radius: 50%;
       background: radial-gradient(circle,rgba(213,169,63,.21),transparent 68%);
       filter: blur(14px);
@@ -242,8 +243,8 @@
     .book {
       position: relative;
       z-index: 2;
-      width: min(430px,88%);
-      height: 580px;
+      width: min(400px,88%);
+      height: 520px;
       transform: perspective(1100px) rotateY(-9deg);
       filter: drop-shadow(0 34px 42px rgba(0,0,0,.6));
     }
@@ -269,7 +270,7 @@
     .book-cover {
       position: absolute;
       inset: 0 0 0 34px;
-      padding: 44px 38px;
+      padding: 40px 34px;
       display: flex;
       flex-direction: column;
       border: 1px solid rgba(213,169,63,.55);
@@ -287,8 +288,8 @@
     }
 
     .book-title {
-      margin-top: 55px;
-      font-size: clamp(2rem,4vw,3.1rem);
+      margin-top: 46px;
+      font-size: clamp(1.85rem,3.5vw,2.85rem);
       line-height: .95;
       font-weight: 950;
       letter-spacing: -.05em;
@@ -301,13 +302,13 @@
     .book-rule {
       width: 70px;
       height: 3px;
-      margin: 27px 0;
+      margin: 24px 0;
       background: var(--gold);
     }
 
     .book-sub {
       color: var(--muted);
-      font-size: .92rem;
+      font-size: .9rem;
     }
 
     .book-author {
@@ -322,9 +323,9 @@
       position: absolute;
       z-index: 4;
       left: 0;
-      bottom: 30px;
+      bottom: 22px;
       max-width: 275px;
-      padding: 18px 20px;
+      padding: 17px 19px;
       border-radius: 15px;
       color: #171108;
       background: linear-gradient(145deg,#f1d47c,#a96f17);
@@ -393,18 +394,9 @@
       gap: 18px;
     }
 
-    .audience-grid {
-      grid-template-columns: repeat(3,1fr);
-    }
-
-    .problem-grid {
-      grid-template-columns: repeat(3,1fr);
-    }
-
-    .content-grid {
-      grid-template-columns: repeat(3,1fr);
-    }
-
+    .audience-grid,
+    .problem-grid,
+    .content-grid,
     .bonus-grid {
       grid-template-columns: repeat(3,1fr);
     }
@@ -618,8 +610,7 @@
       align-items: center;
     }
 
-    .mentor-photo,
-    .photo-placeholder {
+    .mentor-photo {
       width: 100%;
       height: 610px;
       object-fit: cover;
@@ -790,6 +781,7 @@
     }
 
     @media(max-width:960px) {
+
       .hero-grid,
       .how-grid,
       .mentor-grid {
@@ -823,7 +815,7 @@
       }
 
       .book-stage {
-        min-height: 540px;
+        min-height: 520px;
       }
 
       .mentor-photo {
@@ -832,6 +824,7 @@
     }
 
     @media(max-width:640px) {
+
       .container {
         width: min(100% - 28px,1160px);
       }
@@ -853,11 +846,16 @@
       }
 
       .hero {
-        padding: 58px 0 55px;
+        padding: 45px 0 48px;
       }
 
       h1 {
-        font-size: clamp(2.65rem,14vw,4.2rem);
+        font-size: clamp(2.45rem,13vw,3.9rem);
+        line-height: .98;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
       }
 
       .hero-actions .btn {
@@ -865,21 +863,21 @@
       }
 
       .book-stage {
-        min-height: 485px;
+        min-height: 455px;
       }
 
       .book {
-        height: 470px;
+        height: 445px;
         width: 100%;
         transform: none;
       }
 
       .book-cover {
-        padding: 34px 25px;
+        padding: 32px 24px;
       }
 
       .book-title {
-        margin-top: 36px;
+        margin-top: 34px;
       }
 
       .floating {
@@ -934,6 +932,7 @@
       </a>
 
       <div class="nav-links">
+
         <a href="#paraquem">Para quem é</a>
         <a href="#conteudo">Conteúdo</a>
         <a href="#autor">Autor</a>
@@ -946,14 +945,12 @@
           rel="noopener noreferrer">
           Quero o manual
         </a>
-      </div>
 
+      </div>
     </div>
   </nav>
 
   <main>
-
-    <!-- HERO -->
 
     <section class="hero" id="inicio">
 
@@ -998,10 +995,12 @@
           </div>
 
           <div class="microcopy">
+
             <span>Corretores</span>
             <span>Proprietários</span>
             <span>Inquilinos</span>
             <span>PDF digital</span>
+
           </div>
 
         </div>
@@ -1051,9 +1050,6 @@
 
     </section>
 
-
-    <!-- TRUST -->
-
     <div class="trust-strip">
 
       <div class="container trust-grid">
@@ -1076,9 +1072,6 @@
       </div>
 
     </div>
-
-
-    <!-- PARA QUEM -->
 
     <section id="paraquem">
 
@@ -1121,7 +1114,6 @@
 
           </article>
 
-
           <article class="audience-card reveal">
 
             <div class="audience-label">
@@ -1139,7 +1131,6 @@
             </p>
 
           </article>
-
 
           <article class="audience-card reveal">
 
@@ -1165,9 +1156,6 @@
 
     </section>
 
-
-    <!-- BIG IDEA -->
-
     <section class="big-idea">
 
       <div class="container big-idea-inner reveal">
@@ -1181,9 +1169,6 @@
       </div>
 
     </section>
-
-
-    <!-- PROBLEMAS -->
 
     <section>
 
@@ -1206,7 +1191,6 @@
 
         </div>
 
-
         <div class="problem-grid">
 
           <article class="card reveal">
@@ -1218,7 +1202,6 @@
             </p>
           </article>
 
-
           <article class="card reveal">
             <div class="card-number">02</div>
             <h3>“Posso sair antes do contrato?”</h3>
@@ -1227,7 +1210,6 @@
               existe multa e como ela deve ser analisada?
             </p>
           </article>
-
 
           <article class="card reveal">
             <div class="card-number">03</div>
@@ -1238,7 +1220,6 @@
             </p>
           </article>
 
-
           <article class="card reveal">
             <div class="card-number">04</div>
             <h3>“Pode cobrar caução e fiador?”</h3>
@@ -1248,7 +1229,6 @@
             </p>
           </article>
 
-
           <article class="card reveal">
             <div class="card-number">05</div>
             <h3>“O proprietário pode pedir o imóvel?”</h3>
@@ -1257,7 +1237,6 @@
               do contrato e de outros fatores da locação.
             </p>
           </article>
-
 
           <article class="card reveal">
             <div class="card-number">06</div>
@@ -1273,9 +1252,6 @@
       </div>
 
     </section>
-
-
-    <!-- COMO FUNCIONA -->
 
     <section>
 
@@ -1303,7 +1279,6 @@
 
         </div>
 
-
         <div class="step-stack">
 
           <div class="step reveal">
@@ -1319,7 +1294,6 @@
 
           </div>
 
-
           <div class="step reveal">
 
             <div class="step-num">2</div>
@@ -1332,7 +1306,6 @@
             </div>
 
           </div>
-
 
           <div class="step reveal">
 
@@ -1347,7 +1320,6 @@
             </div>
 
           </div>
-
 
           <div class="step reveal">
 
@@ -1370,9 +1342,6 @@
 
     </section>
 
-
-    <!-- DEMONSTRAÇÃO -->
-
     <section>
 
       <div class="container">
@@ -1388,7 +1357,6 @@
           </h2>
 
         </div>
-
 
         <div class="demo-box reveal">
 
@@ -1421,9 +1389,6 @@
 
     </section>
 
-
-    <!-- CONTEÚDO -->
-
     <section id="conteudo">
 
       <div class="container dark-panel">
@@ -1444,7 +1409,6 @@
 
         </div>
 
-
         <div class="content-grid">
 
           <article class="card reveal">
@@ -1456,7 +1420,6 @@
             </p>
           </article>
 
-
           <article class="card reveal">
             <div class="card-icon">02</div>
             <h3>Garantias locatícias</h3>
@@ -1465,7 +1428,6 @@
               e outras modalidades explicadas de forma objetiva.
             </p>
           </article>
-
 
           <article class="card reveal">
             <div class="card-icon">03</div>
@@ -1476,7 +1438,6 @@
             </p>
           </article>
 
-
           <article class="card reveal">
             <div class="card-icon">04</div>
             <h3>Reparos e benfeitorias</h3>
@@ -1485,7 +1446,6 @@
               quando surge a pergunta: “Quem paga?”
             </p>
           </article>
-
 
           <article class="card reveal">
             <div class="card-icon">05</div>
@@ -1496,7 +1456,6 @@
             </p>
           </article>
 
-
           <article class="card reveal">
             <div class="card-icon">06</div>
             <h3>Reajustes e despesas</h3>
@@ -1505,7 +1464,6 @@
               IPTU, condomínio e outras despesas.
             </p>
           </article>
-
 
           <article class="card reveal">
             <div class="card-icon">07</div>
@@ -1516,7 +1474,6 @@
             </p>
           </article>
 
-
           <article class="card reveal">
             <div class="card-icon">08</div>
             <h3>Retomada do imóvel</h3>
@@ -1525,7 +1482,6 @@
               à retomada da propriedade.
             </p>
           </article>
-
 
           <article class="card reveal">
             <div class="card-icon">09</div>
@@ -1541,9 +1497,6 @@
       </div>
 
     </section>
-
-
-    <!-- PREVIEW -->
 
     <section>
 
@@ -1565,7 +1518,6 @@
           </p>
 
         </div>
-
 
         <div class="preview-grid">
 
@@ -1611,9 +1563,6 @@
 
     </section>
 
-
-    <!-- BÔNUS -->
-
     <section>
 
       <div class="container">
@@ -1629,7 +1578,6 @@
           </h2>
 
         </div>
-
 
         <div class="bonus-grid">
 
@@ -1650,7 +1598,6 @@
 
           </article>
 
-
           <article class="card reveal">
 
             <div class="bonus-number">
@@ -1667,7 +1614,6 @@
             </p>
 
           </article>
-
 
           <article class="card reveal">
 
@@ -1692,9 +1638,6 @@
       </div>
 
     </section>
-
-
-    <!-- AUTOR -->
 
     <section id="autor">
 
@@ -1758,9 +1701,6 @@
 
     </section>
 
-
-    <!-- OFERTA -->
-
     <section id="comprar">
 
       <div class="container">
@@ -1780,8 +1720,8 @@
             Tenha uma referência prática de locação disponível
             no celular sempre que precisar consultar
             um assunto recorrente.
-          </p>
 
+          </p>
 
           <div class="offer-list">
 
@@ -1811,7 +1751,6 @@
 
           </div>
 
-
           <div class="price">
 
             <small>
@@ -1824,7 +1763,6 @@
 
           </div>
 
-
           <a
             class="btn btn-primary"
             href="https://pay.kiwify.com.br/RSoo6J2"
@@ -1835,7 +1773,6 @@
 
           </a>
 
-
           <div class="microcopy"
             style="justify-content:center;margin-top:20px">
 
@@ -1844,7 +1781,6 @@
             <span>Pagamento único</span>
 
           </div>
-
 
           <div class="guarantee">
 
@@ -1865,9 +1801,6 @@
 
     </section>
 
-
-    <!-- FAQ -->
-
     <section id="faq">
 
       <div class="container">
@@ -1883,7 +1816,6 @@
           </h2>
 
         </div>
-
 
         <div class="faq">
 
@@ -1901,7 +1833,6 @@
 
           </details>
 
-
           <details class="reveal">
 
             <summary>
@@ -1915,7 +1846,6 @@
             </p>
 
           </details>
-
 
           <details class="reveal">
 
@@ -1931,7 +1861,6 @@
 
           </details>
 
-
           <details class="reveal">
 
             <summary>
@@ -1945,7 +1874,6 @@
 
           </details>
 
-
           <details class="reveal">
 
             <summary>
@@ -1958,7 +1886,6 @@
             </p>
 
           </details>
-
 
           <details class="reveal">
 
@@ -1975,7 +1902,6 @@
 
           </details>
 
-
           <details class="reveal">
 
             <summary>
@@ -1989,7 +1915,6 @@
 
           </details>
 
-
           <details class="reveal">
 
             <summary>
@@ -2002,7 +1927,6 @@
             </p>
 
           </details>
-
 
           <details class="reveal">
 
@@ -2021,9 +1945,6 @@
       </div>
 
     </section>
-
-
-    <!-- CTA FINAL -->
 
     <section style="padding-top:30px">
 
@@ -2066,7 +1987,6 @@
 
   </main>
 
-
   <footer>
 
     <div class="container footer-inner">
@@ -2084,7 +2004,6 @@
 
   </footer>
 
-
   <a
     class="btn btn-primary mobile-cta"
     href="https://pay.kiwify.com.br/RSoo6J2"
@@ -2094,7 +2013,6 @@
     Quero o Manual por R$ 47
 
   </a>
-
 
   <script>
 
