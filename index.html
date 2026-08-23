@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -62,11 +63,11 @@
     }
 
     .announcement {
-      padding: 10px 15px;
+      padding: 9px 15px;
       text-align: center;
       color: #181108;
       background: linear-gradient(90deg,#9b6315,#f1d47d,#ad7019);
-      font-size: .76rem;
+      font-size: .74rem;
       font-weight: 950;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -82,7 +83,7 @@
     }
 
     .nav-inner {
-      min-height: 70px;
+      min-height: 66px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -110,8 +111,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 56px;
-      padding: 0 28px;
+      min-height: 54px;
+      padding: 0 27px;
       border-radius: 10px;
       font-weight: 950;
       border: 1px solid transparent;
@@ -143,13 +144,13 @@
     }
 
     .hero {
-      padding: 58px 0 62px;
+      padding: 44px 0 48px;
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1.08fr .92fr;
-      gap: 54px;
+      gap: 46px;
       align-items: center;
     }
 
@@ -166,7 +167,7 @@
       display: flex;
       gap: 10px;
       align-items: center;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .eyebrow:before {
@@ -178,7 +179,7 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(2.7rem,4.8vw,4.9rem);
+      font-size: clamp(2.6rem,4.55vw,4.65rem);
       line-height: .96;
       letter-spacing: -.05em;
       text-transform: uppercase;
@@ -189,11 +190,11 @@
     }
 
     .hero-subtitle {
-      margin: 22px 0 0;
+      margin: 18px 0 0;
       max-width: 740px;
       color: var(--muted);
-      font-size: clamp(1.02rem,1.35vw,1.2rem);
-      line-height: 1.55;
+      font-size: clamp(1rem,1.25vw,1.14rem);
+      line-height: 1.48;
     }
 
     .hero-subtitle strong {
@@ -204,16 +205,16 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 25px;
+      margin-top: 18px;
     }
 
     .microcopy {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 18px;
+      gap: 15px;
+      margin-top: 14px;
       color: #a39c90;
-      font-size: .82rem;
+      font-size: .8rem;
     }
 
     .microcopy span:before {
@@ -224,7 +225,7 @@
     }
 
     .book-stage {
-      min-height: 520px;
+      min-height: 470px;
       display: grid;
       place-items: center;
       position: relative;
@@ -233,8 +234,8 @@
     .book-stage:before {
       content: "";
       position: absolute;
-      width: 390px;
-      height: 390px;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
       background: radial-gradient(circle,rgba(213,169,63,.21),transparent 68%);
       filter: blur(14px);
@@ -243,10 +244,10 @@
     .book {
       position: relative;
       z-index: 2;
-      width: min(400px,88%);
-      height: 520px;
+      width: min(360px,88%);
+      height: 465px;
       transform: perspective(1100px) rotateY(-9deg);
-      filter: drop-shadow(0 34px 42px rgba(0,0,0,.6));
+      filter: drop-shadow(0 30px 38px rgba(0,0,0,.58));
     }
 
     .book-spine {
@@ -254,13 +255,13 @@
       left: 0;
       top: 10px;
       bottom: 10px;
-      width: 38px;
+      width: 36px;
       display: grid;
       place-items: center;
       writing-mode: vertical-rl;
       transform: rotate(180deg);
       color: #181108;
-      font-size: .69rem;
+      font-size: .67rem;
       font-weight: 950;
       letter-spacing: .14em;
       border-radius: 7px 0 0 7px;
@@ -269,8 +270,8 @@
 
     .book-cover {
       position: absolute;
-      inset: 0 0 0 34px;
-      padding: 40px 34px;
+      inset: 0 0 0 32px;
+      padding: 34px 30px;
       display: flex;
       flex-direction: column;
       border: 1px solid rgba(213,169,63,.55);
@@ -282,14 +283,14 @@
 
     .book-kicker {
       color: var(--gold2);
-      font-size: .71rem;
+      font-size: .68rem;
       font-weight: 950;
       letter-spacing: .15em;
     }
 
     .book-title {
-      margin-top: 46px;
-      font-size: clamp(1.85rem,3.5vw,2.85rem);
+      margin-top: 38px;
+      font-size: clamp(1.7rem,3.15vw,2.55rem);
       line-height: .95;
       font-weight: 950;
       letter-spacing: -.05em;
@@ -300,21 +301,22 @@
     }
 
     .book-rule {
-      width: 70px;
+      width: 64px;
       height: 3px;
-      margin: 24px 0;
+      margin: 21px 0;
       background: var(--gold);
     }
 
     .book-sub {
       color: var(--muted);
-      font-size: .9rem;
+      font-size: .84rem;
+      line-height: 1.45;
     }
 
     .book-author {
       margin-top: auto;
       color: var(--gold2);
-      font-size: .76rem;
+      font-size: .72rem;
       font-weight: 900;
       letter-spacing: .12em;
     }
@@ -322,16 +324,17 @@
     .floating {
       position: absolute;
       z-index: 4;
-      left: 0;
-      bottom: 22px;
-      max-width: 275px;
-      padding: 17px 19px;
-      border-radius: 15px;
+      left: 2px;
+      bottom: 8px;
+      max-width: 255px;
+      padding: 15px 17px;
+      border-radius: 14px;
       color: #171108;
       background: linear-gradient(145deg,#f1d47c,#a96f17);
       box-shadow: var(--shadow);
       font-weight: 950;
-      line-height: 1.3;
+      line-height: 1.25;
+      font-size: .92rem;
     }
 
     .trust-strip {
@@ -340,7 +343,7 @@
     }
 
     .trust-grid {
-      min-height: 105px;
+      min-height: 100px;
       display: grid;
       grid-template-columns: repeat(3,1fr);
       align-items: center;
@@ -351,7 +354,7 @@
     .trust-grid strong {
       display: block;
       color: var(--gold2);
-      font-size: 1.1rem;
+      font-size: 1.08rem;
     }
 
     .trust-grid span {
@@ -392,12 +395,6 @@
     .bonus-grid {
       display: grid;
       gap: 18px;
-    }
-
-    .audience-grid,
-    .problem-grid,
-    .content-grid,
-    .bonus-grid {
       grid-template-columns: repeat(3,1fr);
     }
 
@@ -781,7 +778,6 @@
     }
 
     @media(max-width:960px) {
-
       .hero-grid,
       .how-grid,
       .mentor-grid {
@@ -815,7 +811,7 @@
       }
 
       .book-stage {
-        min-height: 520px;
+        min-height: 490px;
       }
 
       .mentor-photo {
@@ -824,13 +820,12 @@
     }
 
     @media(max-width:640px) {
-
       .container {
         width: min(100% - 28px,1160px);
       }
 
       .announcement {
-        font-size: .63rem;
+        font-size: .61rem;
       }
 
       .nav-links a:not(.btn) {
@@ -842,20 +837,20 @@
       }
 
       .nav-inner {
-        min-height: 60px;
+        min-height: 58px;
       }
 
       .hero {
-        padding: 45px 0 48px;
+        padding: 38px 0 42px;
       }
 
       h1 {
-        font-size: clamp(2.45rem,13vw,3.9rem);
+        font-size: clamp(2.35rem,12.5vw,3.7rem);
         line-height: .98;
       }
 
       .hero-subtitle {
-        font-size: 1rem;
+        font-size: .98rem;
       }
 
       .hero-actions .btn {
@@ -863,27 +858,27 @@
       }
 
       .book-stage {
-        min-height: 455px;
+        min-height: 430px;
       }
 
       .book {
-        height: 445px;
+        height: 420px;
         width: 100%;
         transform: none;
       }
 
       .book-cover {
-        padding: 32px 24px;
+        padding: 30px 22px;
       }
 
       .book-title {
-        margin-top: 34px;
+        margin-top: 30px;
       }
 
       .floating {
         left: 12px;
         right: 12px;
-        bottom: 8px;
+        bottom: 0;
         max-width: none;
       }
 
@@ -932,7 +927,6 @@
       </a>
 
       <div class="nav-links">
-
         <a href="#paraquem">Para quem é</a>
         <a href="#conteudo">Conteúdo</a>
         <a href="#autor">Autor</a>
@@ -945,7 +939,6 @@
           rel="noopener noreferrer">
           Quero o manual
         </a>
-
       </div>
     </div>
   </nav>
@@ -995,12 +988,10 @@
           </div>
 
           <div class="microcopy">
-
             <span>Corretores</span>
             <span>Proprietários</span>
             <span>Inquilinos</span>
             <span>PDF digital</span>
-
           </div>
 
         </div>
@@ -1051,7 +1042,6 @@
     </section>
 
     <div class="trust-strip">
-
       <div class="container trust-grid">
 
         <div>
@@ -1070,7 +1060,6 @@
         </div>
 
       </div>
-
     </div>
 
     <section id="paraquem">
@@ -1282,35 +1271,23 @@
         <div class="step-stack">
 
           <div class="step reveal">
-
             <div class="step-num">1</div>
-
             <div>
               <h3>Surgiu uma dúvida</h3>
-              <p>
-                Identifique a situação que precisa ser analisada.
-              </p>
+              <p>Identifique a situação que precisa ser analisada.</p>
             </div>
-
           </div>
 
           <div class="step reveal">
-
             <div class="step-num">2</div>
-
             <div>
               <h3>Abra o Manual</h3>
-              <p>
-                Localize rapidamente o tema correspondente.
-              </p>
+              <p>Localize rapidamente o tema correspondente.</p>
             </div>
-
           </div>
 
           <div class="step reveal">
-
             <div class="step-num">3</div>
-
             <div>
               <h3>Entenda o ponto principal</h3>
               <p>
@@ -1318,13 +1295,10 @@
                 precisam ser considerados.
               </p>
             </div>
-
           </div>
 
           <div class="step reveal">
-
             <div class="step-num">4</div>
-
             <div>
               <h3>Decida o próximo passo</h3>
               <p>
@@ -1333,7 +1307,6 @@
                 sobre o que precisa perguntar.
               </p>
             </div>
-
           </div>
 
         </div>
@@ -1347,28 +1320,20 @@
       <div class="container">
 
         <div class="section-head center reveal">
-
-          <div class="kicker">
-            NA PRÁTICA
-          </div>
-
+          <div class="kicker">NA PRÁTICA</div>
           <h2>
             É esse tipo de situação que o Manual ajuda você a consultar.
           </h2>
-
         </div>
 
         <div class="demo-box reveal">
 
           <div class="demo-question">
-
             “O inquilino quer devolver o imóvel antes do fim do contrato.
             Existe uma multa prevista. O que precisa ser analisado?”
-
           </div>
 
           <div class="demo-answer">
-
             Em vez de começar a pesquisa do zero,
             você consulta o tópico sobre saída antecipada e multa,
             entende os principais pontos envolvidos e consegue
@@ -1380,7 +1345,6 @@
               Essa é a proposta do Manual:
               transformar uma dúvida solta em uma consulta organizada.
             </strong>
-
           </div>
 
         </div>
@@ -1582,55 +1546,31 @@
         <div class="bonus-grid">
 
           <article class="card reveal">
-
-            <div class="bonus-number">
-              BÔNUS 01
-            </div>
-
-            <h3>
-              Checklist de Entrada no Imóvel
-            </h3>
-
+            <div class="bonus-number">BÔNUS 01</div>
+            <h3>Checklist de Entrada no Imóvel</h3>
             <p>
               Uma lista rápida dos principais pontos
               que merecem atenção no início da locação.
             </p>
-
           </article>
 
           <article class="card reveal">
-
-            <div class="bonus-number">
-              BÔNUS 02
-            </div>
-
-            <h3>
-              Checklist de Devolução do Imóvel
-            </h3>
-
+            <div class="bonus-number">BÔNUS 02</div>
+            <h3>Checklist de Devolução do Imóvel</h3>
             <p>
               Um roteiro para organizar os principais pontos
               na hora de encerrar a locação e devolver as chaves.
             </p>
-
           </article>
 
           <article class="card reveal">
-
-            <div class="bonus-number">
-              BÔNUS 03
-            </div>
-
-            <h3>
-              Guia Rápido: Quem Paga o Quê?
-            </h3>
-
+            <div class="bonus-number">BÔNUS 03</div>
+            <h3>Guia Rápido: Quem Paga o Quê?</h3>
             <p>
               Uma referência resumida para consultar
               situações recorrentes envolvendo despesas
               e responsabilidades.
             </p>
-
           </article>
 
         </div>
@@ -1659,23 +1599,10 @@
           </h2>
 
           <div class="credentials">
-
-            <span class="pill">
-              Administrador de aluguel
-            </span>
-
-            <span class="pill">
-              +14 anos de mercado
-            </span>
-
-            <span class="pill">
-              CEO da Gestcon Imóveis
-            </span>
-
-            <span class="pill">
-              Mentor e palestrante
-            </span>
-
+            <span class="pill">Administrador de aluguel</span>
+            <span class="pill">+14 anos de mercado</span>
+            <span class="pill">CEO da Gestcon Imóveis</span>
+            <span class="pill">Mentor e palestrante</span>
           </div>
 
           <p style="color:var(--muted);font-size:1.05rem">
@@ -1724,43 +1651,17 @@
           </p>
 
           <div class="offer-list">
-
-            <div>
-              Manual do Locador e do Locatário
-            </div>
-
-            <div>
-              Checklist de Entrada no Imóvel
-            </div>
-
-            <div>
-              Checklist de Devolução do Imóvel
-            </div>
-
-            <div>
-              Guia Rápido: Quem Paga o Quê?
-            </div>
-
-            <div>
-              Acesso digital
-            </div>
-
-            <div>
-              Sem mensalidade
-            </div>
-
+            <div>Manual do Locador e do Locatário</div>
+            <div>Checklist de Entrada no Imóvel</div>
+            <div>Checklist de Devolução do Imóvel</div>
+            <div>Guia Rápido: Quem Paga o Quê?</div>
+            <div>Acesso digital</div>
+            <div>Sem mensalidade</div>
           </div>
 
           <div class="price">
-
-            <small>
-              Pagamento único
-            </small>
-
-            <strong>
-              R$ 47
-            </strong>
-
+            <small>Pagamento único</small>
+            <strong>R$ 47</strong>
           </div>
 
           <a
@@ -1768,31 +1669,23 @@
             href="https://pay.kiwify.com.br/RSoo6J2"
             target="_blank"
             rel="noopener noreferrer">
-
             Quero acessar o Manual agora
-
           </a>
 
           <div class="microcopy"
             style="justify-content:center;margin-top:20px">
-
             <span>Compra segura</span>
             <span>Acesso digital</span>
             <span>Pagamento único</span>
-
           </div>
 
           <div class="guarantee">
-
             <strong>Garantia de 7 dias</strong>
-
             <br>
-
             Acesse o material e veja se ele faz sentido para você.
             Caso não atenda às suas expectativas,
             você poderá solicitar o cancelamento dentro
             do prazo aplicável à compra.
-
           </div>
 
         </div>
@@ -1806,138 +1699,86 @@
       <div class="container">
 
         <div class="section-head center reveal">
-
-          <div class="kicker">
-            PERGUNTAS FREQUENTES
-          </div>
-
-          <h2>
-            Tire suas dúvidas antes de comprar.
-          </h2>
-
+          <div class="kicker">PERGUNTAS FREQUENTES</div>
+          <h2>Tire suas dúvidas antes de comprar.</h2>
         </div>
 
         <div class="faq">
 
           <details class="reveal">
-
-            <summary>
-              O Manual serve para corretores?
-            </summary>
-
+            <summary>O Manual serve para corretores?</summary>
             <p>
               Sim. Ele pode ser utilizado como referência de consulta
               para dúvidas recorrentes que aparecem no atendimento
               a proprietários e inquilinos.
             </p>
-
           </details>
 
           <details class="reveal">
-
-            <summary>
-              Serve para proprietários?
-            </summary>
-
+            <summary>Serve para proprietários?</summary>
             <p>
               Sim. O proprietário poderá consultar temas relacionados
               aos seus direitos, deveres, despesas, garantias,
               vistoria e outras situações da locação.
             </p>
-
           </details>
 
           <details class="reveal">
-
-            <summary>
-              E para inquilinos?
-            </summary>
-
+            <summary>E para inquilinos?</summary>
             <p>
               Sim. O Manual também aborda assuntos relevantes
               para quem aluga um imóvel, como despesas,
               garantias, multa, reparos e devolução.
             </p>
-
           </details>
 
           <details class="reveal">
-
-            <summary>
-              Preciso entender de Direito?
-            </summary>
-
+            <summary>Preciso entender de Direito?</summary>
             <p>
               Não. O objetivo do material é apresentar os assuntos
               de forma mais simples e direta.
             </p>
-
           </details>
 
           <details class="reveal">
-
-            <summary>
-              O conteúdo é baseado na Lei do Inquilinato?
-            </summary>
-
+            <summary>O conteúdo é baseado na Lei do Inquilinato?</summary>
             <p>
               Sim. O material utiliza como referência
               a Lei nº 8.245/91.
             </p>
-
           </details>
 
           <details class="reveal">
-
-            <summary>
-              O Manual substitui um advogado?
-            </summary>
-
+            <summary>O Manual substitui um advogado?</summary>
             <p>
               Não. Trata-se de material informativo e educacional.
               Casos específicos que exijam orientação jurídica
               individualizada devem ser analisados
               por profissional habilitado.
             </p>
-
           </details>
 
           <details class="reveal">
-
-            <summary>
-              Como vou receber?
-            </summary>
-
+            <summary>Como vou receber?</summary>
             <p>
               O produto é digital. Após a confirmação da compra,
               você receberá as orientações de acesso ao material.
             </p>
-
           </details>
 
           <details class="reveal">
-
-            <summary>
-              Posso consultar pelo celular?
-            </summary>
-
+            <summary>Posso consultar pelo celular?</summary>
             <p>
               Sim. O material pode ser acessado
               pelo celular, tablet ou computador.
             </p>
-
           </details>
 
           <details class="reveal">
-
-            <summary>
-              É assinatura mensal?
-            </summary>
-
+            <summary>É assinatura mensal?</summary>
             <p>
               Não. O valor de R$ 47 é um pagamento único.
             </p>
-
           </details>
 
         </div>
@@ -1974,9 +1815,7 @@
             href="https://pay.kiwify.com.br/RSoo6J2"
             target="_blank"
             rel="noopener noreferrer">
-
             Acessar agora por R$ 47
-
           </a>
 
         </div>
@@ -2009,23 +1848,16 @@
     href="https://pay.kiwify.com.br/RSoo6J2"
     target="_blank"
     rel="noopener noreferrer">
-
     Quero o Manual por R$ 47
-
   </a>
 
   <script>
-
     const observer = new IntersectionObserver((entries) => {
-
       entries.forEach((entry) => {
-
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
-
       });
-
     }, {
       threshold: 0.10
     });
@@ -2033,8 +1865,8 @@
     document
       .querySelectorAll('.reveal')
       .forEach((element) => observer.observe(element));
-
   </script>
 
 </body>
 </html>
+```
